@@ -15,9 +15,11 @@ header {
     background-color: blue;
     justify-content: space-between;
 }
-.logobarra{
+
+.logobarra {
     width: 5%;
 }
+
 /*no logro modificar el color de la letra de la barra de*/
 .colornav {
     background-color: #0000FF !important;
@@ -374,7 +376,8 @@ header {
 
 .misionvision {
     background-color: #0000FF;
-    padding: 200px;
+    width: 100%;
+    padding: 10%;
 }
 
 .mision {
@@ -478,7 +481,6 @@ header {
     font-size: 96px;
     color: white;
     font-family: 'Just Another Hand', cursive;
-    padding-right: 50px;
     text-align: end;
 
 }
@@ -534,14 +536,14 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 300px;
+    height: auto;
 }
 
 .fondoespacio h1 {
     font-size: 96px;
     color: white;
     font-family: 'Just Another Hand', cursive;
-    padding-right: 50px;
+    padding-right: 10%;
     text-align: end;
     padding-top: 5%;
 }
@@ -608,9 +610,11 @@ header {
         width: 100%;
         height: auto;
     }
-.logobarra{
-    width: 20%;
-}
+
+    .logobarra {
+        width: 20%;
+    }
+
     .fondoinicio h1 {
         font-size: 32px;
         color: white;
@@ -771,6 +775,8 @@ header {
         padding-top: 5%;
         padding-bottom: 5%;
         justify-content: center;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .nena {
@@ -781,36 +787,148 @@ header {
     .form {
         width: 100%;
         padding: 5%;
-
     }
 
     .form h3 {
         font-size: 200%;
     }
+
+    /*propuesta*/
+    .fondopropuesta {
+        background-image: url(../assets/img/propuesta.png);
+        width: 100%;
+        height: auto;
+        padding: 10%;
+    }
+
+    .fondopropuesta h1 {
+        font-size: 200%;
+        color: white;
+        font-family: 'Just Another Hand', cursive;
+        text-align: center;
+        padding: 0%;
+        padding-top: 20%;
+    }
+
+    .misionvision {
+        width: 100%;
+        padding: 10%;
+    }
+
+    .mision {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "textomision"
+            "imgmision";
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .textomision h3 {
+        font-size: 10px;
+    }
+
+    .textomision p {
+        font-size: 10px;
+    }
+
+    .imgmision {
+        width: 100%;
+    }
+
+    .vision {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "textovision"
+            "imgvision";
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .textovision h3 {
+        font-size: 10px;
+    }
+
+    .textovision p {
+        font-size: 10px;
+    }
+
+    .imgvision {
+        width: 100%;
+    }
+
+    /*espacio*/
+    .fondoespacio {
+        padding: 5%;
+    }
+
+    .fondoespacio h1 {
+        font-size: 400%;
+        text-align: center;
+        padding: 0%;
+    }
+    .mapa{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "textomapa"
+        "map";
+    }
+
+    .mapa h2{
+        font-size: 200%;
+    }
+    .mapa h3{
+        font-size: 100%;
+    }
+    .map{
+        width: 100%;
+    }
+
+    .imagenes h3{
+        font-size: 250%;
+    }
+    .boximg{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "im1"
+        "im2"
+        "im3"
+        "im4";
+    }
+    .im1{
+        width: 200%;
+    }
+    .im2{
+        width: 200%;
+    }
+    .im3{
+        width: 200%;
+        padding: 0%;
+    }
+    .im4{
+        width: 200%;
+        padding: 0%;
+    }
+    /*contacto*/
+    .contacto h1{
+        font-size:300%;
+        text-align: center;
+        padding-left: 0%;
 }
-
-/*mediaq*/
-/*
-
-.fondoinicio {
-    background-image: url(../assets/img/fondo.png);
-    max-width: 100%;
-    height: auto;
+.todocontacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "infocontacto"
+    "imagencontacto";
 }
-
-.fondoinicio h1 {
-    font-size: 64px;
-    color: white;
-    font-family: 'Just Another Hand', cursive;
-    text-align: center;
-
-    padding-top: 20%;
+.imagencontacto{
+    justify-items: center;
 }
-
-.fondoinicio h2 {
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 20px;
 }
-*/
