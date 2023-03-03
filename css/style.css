@@ -9,6 +9,7 @@ font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red
 }
 
 header {
@@ -604,7 +605,8 @@ header {
     padding-top: 2%;
 }
 
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 390px) {
+
     .fondoinicio {
         background-image: url(../assets/img/fondo.png);
         width: 100%;
@@ -686,11 +688,11 @@ header {
     }
 
     .footerdata li {
-        font-size: 1rem;
+        font-size: 80%;
     }
 
     .fondoclases h1 {
-        font-size: 400%;
+        font-size: 200%;
         text-align: center;
 
 
