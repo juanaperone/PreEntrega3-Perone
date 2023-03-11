@@ -1,0 +1,43 @@
+.fondopropuesta{
+    background-image: url(../assets/img/propuesta.png);
+    @include background(center,no-repeat,cover);
+    width: 100%;
+    height: 900px;
+    h1{
+    @include text(96px, white,$typografia-titulos,right,10%);
+    }
+}
+.misionvision{
+    background-color:$background-principal;
+    @include propiedades(100%,auto,10%);
+    .mision{
+        background-color:white;
+        border-radius: 20px;
+        @include pm(5%,3%);
+@include grid(2fr 2fr,auto,auto);
+grid-template-areas: "textomision imgmision";
+h3{
+    @include text(xx-large,#0000FF,$typografia-subtitulos,auto,2%);
+}
+p{ @include text(x-large,black,$typografia-subtitulos,auto,2%);
+}
+
+    }
+    .vision{
+        background-color:white;
+        border-radius: 20px;
+        @include pm(5%,3%);
+    @include grid(2fr 2fr,auto,auto);
+    grid-template-areas: "textovision imgvision";
+    h3{
+    @include text(xx-large,#0000FF,$typografia-subtitulos,auto,2%);
+    }
+    p{ @include text(x-large,black,$typografia-subtitulos,auto,2%);
+    }
+    }
+}
+.video{
+    background-color:$background-secundario;
+    @include pm(5%,auto);
+    @include grid(1fr,auto,center);
+}

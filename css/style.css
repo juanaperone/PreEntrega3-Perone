@@ -1,935 +1,362 @@
-/*
-font-family: 'Just Another Hand', cursive;
-font-family: 'Just Another Hand', cursive;
-font-family: 'Poppins', sans-serif;
-
-*/
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box0; }
 
 header {
-    background-color: blue;
-    justify-content: space-between;
-}
+  background-color: blue;
+  justify-content: space-between; }
 
-.logobarra {
-    width: 5%;
-}
-
-/*no logro modificar el color de la letra de la barra de*/
 .colornav {
-    background-color: #0000FF !important;
-}
+  background-color: blue !important; }
 
-.navletra {
-    font-family: 'Poppins', sans-serif !important;
-    color: white !important;
-}
-
-.fondoinicio {
-    background-image: url(../assets/img/fondo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    text-align: end;
-    padding: 5%;
-
-}
-
-.fondoinicio h1 {
+main .fondoinicio {
+  background-image: url(../assets/img/fondo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  main .fondoinicio h1 {
     font-size: 96px;
     color: white;
-    font-family: 'Just Another Hand', cursive;
+    font-family: "Just Another Hand", cursive;
     text-align: right;
-    padding-right: 5%;
-    padding-top: 20%;
-}
-
-.fondoinicio h2 {
-    font-family: 'Poppins', sans-serif;
+    padding: 10%;
+    padding-bottom: 0%; }
+  main .fondoinicio h2 {
+    font-size: 32px;
     color: white;
+    font-family: "Poppins", sans-serif;
     text-align: right;
-    padding-right: 5%;
-}
+    padding: 10%;
+    padding-top: 0%;
+    padding-bottom: 25%; }
 
-.fondoinicio h3 {
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    padding-right: 50px;
-
-}
-
-
-.tema {
-    background-color: #F15A25;
-    width: auto;
-    padding: 5%;
-}
-
-.tema h2 {
-    color: white;
+main .tema {
+  background-color: #F15A25;
+  width: auto;
+  padding: 15%; }
+  main .tema h2 {
     font-size: 72px;
-    font-weight: lighter;
-    text-align: center;
-    font-family: 'Just Another Hand', cursive;
-
-}
-
-.tema p {
     color: white;
+    font-family: "Just Another Hand", cursive;
+    text-align: center;
+    padding: 5%; }
+  main .tema p {
     font-size: 34px;
-    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-family: "Poppins", sans-serif;
     text-align: center;
-}
+    padding: auto; }
 
-.tema h2 {
-    padding: 5%;
-}
-
-.info {
-
-    background-color: #F15A25;
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    grid-template-rows: auto;
-    grid-template-areas: "img1 img2 img3"
-        "boton1 boton2 boton3";
-    justify-items: center;
-    padding: 5%;
-
-}
-
-.img1 {
-    width: 80%;
-    grid-area: img1;
-}
-
-.img2 {
-    width: 80%;
-    grid-area: img2;
-}
-
-.img3 {
-    width: 80%;
-    grid-area: img3;
-}
-
-.boton1 {
+main .info {
+  background-color: #F15A25;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-area: "img1 img2 img3" "boton1 boton2 boton3"; }
+  main .info button {
     border-color: blue;
     border-radius: 50px;
     background-color: blue;
     color: azure;
     margin: 3%;
-    font-size: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
-    grid-area: boton1;
-}
+    font-size: 20px; }
 
-.boton2 {
-    font-size: 20px;
-    border-color: blue;
-    border-radius: 50px;
-    background-color: blue;
-    color: azure;
-    margin: 3%;
-    padding: 5%;
-    grid-area: boton2;
-}
-
-.boton3 {
-    font-size: 20px;
-    border-color: blue;
-    border-radius: 50px;
-    background-color: blue;
-    color: azure;
-    margin: 3%;
-    padding: 5%;
-    grid-area: boton3;
-}
-
-.fondofin {
-    display: grid;
-    background-image: url(../assets/img/kids.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: "text"
-        "imglogo";
-    justify-items: center;
-    align-content: center;
-    padding: 25%;
-    padding-bottom: 2%;
-}
-
-.fondofin h3.text {
-    font-family: 'Just Another Hand', cursive;
-    font-size: 96px;
+main .fondofin {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-items: center;
+  background-image: url(../assets/img/kids.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-template-areas: "text" "imglogo";
+  padding: 20%; }
+  main .fondofin h3, main .fondofin .todocontacto .infocontacto p, .todocontacto .infocontacto main .fondofin p {
+    font-size: 72px;
     color: white;
-    font-weight: lighter;
-    align-self: center;
-
-}
-
-.footer {
-    display: grid;
-    grid-template-columns: 3fr 3fr;
-    background-color: blue;
-    padding: 2%;
-}
-
-.footerdata {
-    list-style: none;
-    text-align: right;
-    padding: 2%;
-}
-
-.footerdata li {
-    font-size: 24px;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    justify-content: end;
-}
-
-.imgfooter {
-    padding: 2%;
-    width: 20%;
-}
-
-.imagenfooter {
-    width: 100%;
-}
-
-/*clases*/
+    font-family: "Just Another Hand", cursive;
+    text-align: center;
+    padding: 5%; }
 
 .fondoclases {
-    background-image: url(../assets/img/fondoclases.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    padding: 5%;
-}
-
-.fondoclases h1 {
+  background-image: url(../assets/img/fondoclases.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding: 5%; }
+  .fondoclases h1 {
     font-size: 600%;
     color: white;
-    font-family: 'Just Another Hand', cursive;
-    padding-right: 10%;
+    font-family: "Just Another Hand", cursive;
     text-align: end;
-    padding-top: 5%;
-
-}
+    padding: 3%; }
 
 .grupos {
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    grid-template-rows: auto;
-    grid-template-areas: "grupo1 grupo2 grupo3"
-        "grupo-1 grupo-2 grupo-3";
-    padding: 5%;
-    text-decoration: none;
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    margin: 5%;
+  padding: 5%;
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: auto;
+  justify-items: center; }
+  .grupos p {
     font-size: 200%;
-    justify-items: center;
-}
-
-.edades {
-    display: flex;
-}
-
-.edades li {
-    text-decoration: none;
     color: black;
-    font-family: 'Poppins', sans-serif;
-    margin: 20px;
-    font-size: 20px;
-    list-style: none;
-}
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 5%; }
 
 .queaprendemos {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas: "imgart textoqa";
-}
-
-.textoqa {
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: auto;
+  justify-items: center; }
+  .queaprendemos .textoqa {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row: auto;
-    grid-template-areas: "top1"
-        "top2"
-        "top3";
-    align-items: center;
-    padding-right: 10%;
-}
-
-.queaprendemos h3 {
+    grid-template-rows: auto;
+    justify-items: center;
+    padding-right: 10%; }
+  .queaprendemos h3, .queaprendemos .todocontacto .infocontacto p, .todocontacto .infocontacto .queaprendemos p {
     color: #0000FF;
-    font-family: 'Poppins', sans-serif;
-}
-
-.queaprendemos p {
-    font-family: 'Poppins', sans-serif;
-
-}
-
-.imgart {
-    padding-left: 15%;
-}
+    font-family: "Poppins", sans-serif; }
 
 .inscripcion {
-    background-color: #F15A25;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-area: "nena form";
-    margin-top: 10%;
-}
-
-.form {
+  background-color: #F15A25;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-area: "nena form"; }
+  .inscripcion form {
     width: 80%;
+    height: auto;
     padding: 20%;
     background-color: white;
     border-radius: 50px;
     text-align: center;
     align-self: center;
-    font-family: 'Poppins', sans-serif;
-
-}
-
-.cajaformulario {
-    width: 100%;
-    padding: 5%;
-    margin: 5%;
-    border-color: #0000FF;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-}
-
-.fieldset {
-    border-style: none;
-
-}
-
-.formulario {
-    width: 80%;
-    padding: 2%;
-    margin: 2%;
-
-}
-
-.form h3 {
-    font-family: 'Just Another Hand', cursive;
-    font-size: 400%;
-    color: #0000FF;
-    text-align: center;
-}
-
-.enviar {
-    background-color: blue;
-    border-radius: 15px;
-    font-family: 'Poppins', sans-serif;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: white;
-    border-color: #0000FF;
-    font-size: 20px;
-}
-
-
-/*PROPUESTA*/
+    font-family: "Poppins", sans-serif; }
+    .inscripcion form .cajaformulario {
+      width: 100%;
+      height: auto;
+      padding: 5%;
+      border-color: #0000FF;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0; }
+    .inscripcion form h3, .inscripcion form .todocontacto .infocontacto p, .todocontacto .infocontacto .inscripcion form p {
+      font-size: 400%;
+      color: #0000FF;
+      font-family: "Just Another Hand", cursive;
+      text-align: center;
+      padding: 5%; }
+    .inscripcion form .enviar {
+      background-color: blue;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      padding: 10px;
+      margin: 10px;
+      border-color: #0000FF;
+      font-size: 20px; }
 
 .fondopropuesta {
-    background-image: url(../assets/img/propuesta.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 900px;
-}
-
-.fondopropuesta h1 {
+  background-image: url(../assets/img/propuesta.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 900px; }
+  .fondopropuesta h1 {
     font-size: 96px;
     color: white;
-    font-family: 'Just Another Hand', cursive;
-    padding-right: 50px;
-    text-align: end;
-    padding-top: 5%;
-
-}
+    font-family: "Just Another Hand", cursive;
+    text-align: right;
+    padding: 10%; }
 
 .misionvision {
-    background-color: #0000FF;
-    width: 100%;
-    padding: 10%;
-}
-
-.mision {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas: "textomision imgmision";
+  background-color: blue;
+  width: 100%;
+  height: auto;
+  padding: 10%; }
+  .misionvision .mision {
     background-color: white;
     border-radius: 20px;
     padding: 5%;
     margin: 3%;
-}
-
-.mision h3 {
-    font-family: 'Poppins', sans-serif;
-    color: #0000FF;
-    font-family: 'Poppins', sans-serif;
-    padding: 2%;
-    padding-bottom: 1%;
-    font-size: xx-large;
-}
-
-.mision p {
-    padding: 2%;
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-size: x-large;
-
-}
-
-.imgmision {
-    display: grid;
-    align-self: end;
-    align-items: center;
-}
-
-.vision {
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: auto;
-    grid-template-areas: "textomision imgmision";
+    justify-items: auto;
+    grid-template-areas: "textomision imgmision"; }
+    .misionvision .mision h3, .misionvision .mision .todocontacto .infocontacto p, .todocontacto .infocontacto .misionvision .mision p {
+      font-size: xx-large;
+      color: #0000FF;
+      font-family: "Poppins", sans-serif;
+      text-align: auto;
+      padding: 2%; }
+    .misionvision .mision p {
+      font-size: x-large;
+      color: black;
+      font-family: "Poppins", sans-serif;
+      text-align: auto;
+      padding: 2%; }
+  .misionvision .vision {
     background-color: white;
     border-radius: 20px;
     padding: 5%;
     margin: 3%;
-}
-
-.vision h3 {
-    font-family: 'Poppins', sans-serif;
-    color: #0000FF;
-    font-family: 'Poppins', sans-serif;
-    font-size: xx-large;
-
-}
-
-.vision p {
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-size: x-large;
-}
-
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+    justify-items: auto;
+    grid-template-areas: "textovision imgvision"; }
+    .misionvision .vision h3, .misionvision .vision .todocontacto .infocontacto p, .todocontacto .infocontacto .misionvision .vision p {
+      font-size: xx-large;
+      color: #0000FF;
+      font-family: "Poppins", sans-serif;
+      text-align: auto;
+      padding: 2%; }
+    .misionvision .vision p {
+      font-size: x-large;
+      color: black;
+      font-family: "Poppins", sans-serif;
+      text-align: auto;
+      padding: 2%; }
 
 .video {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "video1";
-    background-color: #F15A25;
-    padding: 10%;
-
-
-}
-
-.video1 {
-    width: 100%;
-    align-items: center;
-    align-self: center;
-}
-
-
-/*contacto*/
-
-.contacto {
-    background-color: #F15A25;
-    padding: 100px;
-
-}
-
-.todocontacto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "infocontaco imagencontacto";
-    align-items: center;
-    padding: 5%;
-}
-
-.contacto h1 {
-    font-size: 96px;
-    color: white;
-    font-family: 'Just Another Hand', cursive;
-    text-align: end;
-
-}
-
-.imagencontacto {
-    display: grid;
-    align-self: center;
-
-}
-
-.imagencontacto img {
-    display: grid;
-    width: 70%;
-    align-self: center;
-    align-items: center;
-}
-
-.infocontacto {
-    padding-left: 20%;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-areas: "infocontacto";
-    padding: 2%;
-    align-self: center;
-    justify-content: center;
-}
-
-.infocontacto h3 {
-    font-family: 'Poppins', sans-serif;
-    color: blue;
-
-}
-
-.infocontacto p {
-    font-family: 'Poppins', sans-serif;
-
-}
-
-.frasefinalcontacto h3 {
-    font-family: 'Just Another Hand', cursive;
-    color: #0000FF;
-    font-size: 64px;
-    font-weight: lighter;
-    text-align: center;
-}
-
-
-/*espacio*/
+  background-color: #F15A25;
+  padding: 5%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-items: center; }
 
 .fondoespacio {
-    background-image: url(../assets/img/salonarte.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-}
-
-.fondoespacio h1 {
-    font-size: 96px;
+  background-image: url(../assets/img/salonarte.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding: 5%; }
+  .fondoespacio h1 {
+    font-size: 600%;
     color: white;
-    font-family: 'Just Another Hand', cursive;
-    padding-right: 10%;
+    font-family: "Just Another Hand", cursive;
     text-align: end;
-    padding-top: 5%;
-}
+    padding: 3%; }
 
 .mapa {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas: "textomapa map";
-    padding: 10%;
-}
-
-.mapa h2 {
-    font-family: 'Just Another Hand', cursive;
-    color: #0000FF;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: auto;
+  justify-items: auto;
+  padding: 10%; }
+  .mapa h2 {
     font-size: 64px;
-    margin-left: 5%;
-}
-
-.mapa h3 {
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    margin-left: 5%;
-
-}
+    color: #0000FF;
+    font-family: "Just Another Hand", cursive;
+    text-align: left;
+    padding: 5%; }
+  .mapa h3, .mapa .todocontacto .infocontacto p, .todocontacto .infocontacto .mapa p {
+    font-size: 32px;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    padding: 5%; }
 
 .imagenes {
-    background-color: #F15A25;
-    padding: 100px;
-
-}
-
-.imagenes h3 {
-    font-family: 'Just Another Hand', cursive;
-    color: white;
+  background-color: #F15A25;
+  padding: 10%; }
+  .imagenes h3, .imagenes .todocontacto .infocontacto p, .todocontacto .infocontacto .imagenes p {
     font-size: 64px;
+    color: white;
+    font-family: "Just Another Hand", cursive;
     text-align: center;
-
-}
-
-
-.boximg {
+    padding: auto; }
+  .imagenes .boximg {
     display: grid;
-    grid-template-rows: auto;
     grid-template-columns: 2fr 2fr;
-    grid-template-areas: "im1 im2"
-        "im3 im4";
-    align-items: center;
-    justify-items: center;
-    padding: 0%;
-}
-
-.im3 {
-    padding-top: 2%;
-}
-
-.im4 {
-    padding-top: 2%;
-}
-
-@media only screen and (max-width : 390px) {
-
-    .fondoinicio {
-        background-image: url(../assets/img/fondo.png);
-        width: 100%;
-        height: auto;
-    }
-
-    .logobarra {
-        width: 20%;
-    }
-
-    .fondoinicio h1 {
-        font-size: 32px;
-        color: white;
-        font-family: 'Just Another Hand', cursive;
-        text-align: center;
-        padding-top: 20%;
-    }
-
-    .fondoinicio h2 {
-        font-family: 'Poppins', sans-serif;
-        color: white;
-        text-align: center;
-        font-size: 1rem;
-    }
-
-    .tema h2 {
-        font-size: 36px;
-    }
-
-    .tema p {
-        font-size: 16px;
-    }
-
-    .info {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "img1"
-            "boton1"
-            "img2"
-            "boton2"
-            "img3"
-            "boton3";
-
-    }
-
-    .fondofin {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-
-    }
-
-    .footer {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "imgfooter"
-            "footerdata";
-        justify-content: center;
-    }
-
-    .imgfooter {
-        width: 100%;
-
-    }
-
-    .imagenfooter {
-        grid: "imgfooter";
-        width: 50%;
-
-    }
-
-    .footerdata {
-        text-align: center;
-        grid: "footerdata";
-
-    }
-
-    .footerdata li {
-        font-size: 80%;
-    }
-
-    .fondoclases h1 {
-        font-size: 200%;
-        text-align: center;
-
-
-    }
-
-    /*clases*/
-
-    .grupos {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "grupo1"
-            "grupi1"
-            "grupo2"
-            "grupi2"
-            "grupo3"
-            "grupi3";
-
-    }
-
-    .grupos img {
-        width: 50%;
-    }
-
-    .grupo1 {
-        grid: "grupo1";
-    }
-
-    .grupi1 {
-        grid: "grupi1";
-
-    }
-
-    .grupo2 {
-        grid: "grupo2";
-    }
-
-    .grupi2 {
-        grid: "grupi2";
-    }
-
-    .grupo3 {
-        grid: "grupo3";
-    }
-
-    .grupi3 {
-        grid: "grupi3";
-    }
-
-    .grupos p {
-        font-size: 70%;
-    }
-
-    .queaprendemos {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "imgart"
-            "textoqa";
-
-    }
-
-    .imgart {
-        width: 100%;
-        text-align: center;
-    }
-
-    .textoqa {
-        width: 100%;
-        align-items: center;
-        padding: 5%;
-        text-align: center;
-    }
-
-    .inscripcion {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "nena"
-            "form";
-        align-items: center;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        justify-content: center;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .nena {
-        width: 100%;
-        align-self: center;
-    }
-
-    .form {
-        width: 100%;
-        padding: 5%;
-    }
-
-    .form h3 {
-        font-size: 200%;
-    }
-
-    /*propuesta*/
-    .fondopropuesta {
-        background-image: url(../assets/img/propuesta.png);
-        width: 100%;
-        height: auto;
-        padding: 10%;
-    }
-
-    .fondopropuesta h1 {
-        font-size: 200%;
-        color: white;
-        font-family: 'Just Another Hand', cursive;
-        text-align: center;
-        padding: 0%;
-        padding-top: 20%;
-    }
-
-    .misionvision {
-        width: 100%;
-        padding: 10%;
-    }
-
-    .mision {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "textomision"
-            "imgmision";
-        align-items: center;
-        justify-content: center;
-        background-color: white;
-    }
-
-    .textomision h3 {
-        font-size: 10px;
-    }
-
-    .textomision p {
-        font-size: 10px;
-    }
-
-    .imgmision {
-        width: 100%;
-    }
-
-    .vision {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "textovision"
-            "imgvision";
-        align-items: center;
-        justify-content: center;
-        background-color: white;
-    }
-
-    .textovision h3 {
-        font-size: 10px;
-    }
-
-    .textovision p {
-        font-size: 10px;
-    }
-
-    .imgvision {
-        width: 100%;
-    }
-
-    /*espacio*/
-    .fondoespacio {
-        padding: 5%;
-    }
-
-    .fondoespacio h1 {
-        font-size: 400%;
-        text-align: center;
-        padding: 0%;
-    }
-    .mapa{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "textomapa"
-        "map";
-    }
-
-    .mapa h2{
-        font-size: 200%;
-    }
-    .mapa h3{
-        font-size: 100%;
-    }
-    .map{
-        width: 100%;
-    }
-
-    .imagenes h3{
-        font-size: 250%;
-    }
-    .boximg{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "im1"
-        "im2"
-        "im3"
-        "im4";
-    }
-    .im1{
-        width: 200%;
-    }
-    .im2{
-        width: 200%;
-    }
-    .im3{
-        width: 200%;
-        padding: 0%;
-    }
-    .im4{
-        width: 200%;
-        padding: 0%;
-    }
-    /*contacto*/
-    .contacto h1{
-        font-size:300%;
-        text-align: center;
-        padding-left: 0%;
-}
-.todocontacto{
-    display: grid;
-    grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "infocontacto"
-    "imagencontacto";
-}
-.imagencontacto{
-    justify-items: center;
-}
-}
+    justify-items: center; }
+  .imagenes .im3, .imagenes .im4 {
+    padding-top: 2%; }
+
+.contacto {
+  background-color: #F15A25;
+  padding: 100px; }
+  .contacto h1 {
+    font-size: 600%;
+    color: white;
+    font-family: "Just Another Hand", cursive;
+    text-align: end;
+    padding: 3%; }
+
+.todocontacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: auto;
+  grid-template-areas: "infocontaco imagencontacto";
+  align-items: center;
+  padding: 5%;
+  padding-bottom: 0%; }
+  .todocontacto .infocontacto h3, .todocontacto .infocontacto p {
+    font-family: "Poppins", sans-serif;
+    color: blue; }
+  .todocontacto .infocontacto p {
+    color: black; }
+
+.frasefinalcontacto h3, .frasefinalcontacto .todocontacto .infocontacto p, .todocontacto .infocontacto .frasefinalcontacto p {
+  font-size: 64px;
+  color: #0000FF;
+  font-family: "Just Another Hand", cursive;
+  text-align: center;
+  padding: 5%;
+  padding-top: 2%; }
+
+.footer {
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  grid-template-rows: auto;
+  justify-items: auto;
+  padding: 2%; }
+  .footer li {
+    font-size: 24px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: right;
+    padding: 2%;
+    justify-content: end;
+    list-style: none; }
+  .footer .imgenfooter {
+    width: 100%; }
+
+@media (max-width: 320px) {
+  main .fondoincio {
+    background-image: url(../assets/img/fondo.png);
+    width: 100%;
+    height: auto;
+    padding: auto; }
+    main .fondoincio h1 {
+      font-size: 3px;
+      color: white;
+      font-family: "Just Another Hand", cursive;
+      text-align: center;
+      padding: 10%;
+      padding-bottom: 0%; }
+    main .fondoincio h2 {
+      font-size: 1rem;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      padding: 10%;
+      padding-top: 0%; } }

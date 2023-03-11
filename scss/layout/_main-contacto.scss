@@ -1,0 +1,32 @@
+.contacto {
+    background-color:$background-secundario;
+    padding: 100px;
+    h1{
+        @include text(600%,white,$typografia-titulos,end,3%);
+        }
+}
+.todocontacto{
+    @include grid(1fr 1fr,auto,auto);
+    grid-template-areas: "infocontaco imagencontacto";
+    align-items: center;
+    padding: 5%;
+    padding-bottom:0%;
+    .infocontacto{
+        h3{
+            font-family:$typografia-subtitulos;
+            color: blue;
+        }
+        p{
+            @extend h3;
+            color: black;
+        }
+        
+    }
+}
+
+.frasefinalcontacto{
+    h3{
+        @include text(64px,#0000FF,$typografia-titulos,center,5%);
+        padding-top: 2%;
+    }
+}

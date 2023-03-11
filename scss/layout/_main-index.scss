@@ -1,0 +1,54 @@
+main{
+.fondoinicio {
+    background-image: url(../assets/img/fondo.png);
+    @include background(center, no-repeat, cover);
+
+    h1 {
+        @include text(96px, white, $typografia-titulos, right, 10%);
+        padding-bottom: 0%
+    }
+
+    h2 {
+        @include text(32px, white, $typografia-subtitulos, right, 10%);
+        padding-top: 0%;
+        padding-bottom: 25%;
+    }
+}
+
+.tema {
+    @include tema(#F15A25, auto, 15%);
+
+    h2 {
+        @include text(72px, white, $typografia-titulos, center, 5%);
+    }
+
+    p {
+        @include text(34px, white, $typografia-subtitulos, center, auto);
+    }
+}
+
+.info {
+    background-color: $background-secundario;
+    @include grid(3fr 3fr 3fr, auto, center);
+    grid-area: "img1 img2 img3"
+        "boton1 boton2 boton3";
+
+    button {
+        @include boton(blue, 50px, blue, azure, 3%, 20px);
+    }
+}
+
+.fondofin {
+    @include grid(auto, auto, center);
+    background-image: url(../assets/img/kids.jpg);
+    @include background(center, no-repeat, cover);
+    grid-template-areas: "text"
+        "imglogo";
+    padding: 20%;
+
+    h3 {
+        @include text(72px, white, $typografia-titulos, center, 5%);
+    }
+
+}
+}

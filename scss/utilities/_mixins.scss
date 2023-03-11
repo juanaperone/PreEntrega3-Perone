@@ -1,0 +1,59 @@
+@mixin grid($col,$row, $justify){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    justify-items:$justify;
+}
+
+@mixin text($fontsize,$color,$fontfamily,$textaling,$padding){
+font-size: $fontsize;
+color: $color;
+font-family: $fontfamily;
+text-align: $textaling;
+padding: $padding;
+}
+
+@mixin tema($background,$width,$padding){
+background-color: $background;
+width: $width;
+padding: $padding;
+}
+
+@mixin boton($bordercolor,$borderradius,$background,$color,$margin,$fontsize){
+    border-color:$bordercolor;
+    border-radius: $borderradius;
+    background-color:$background;
+    color:$color;
+    margin:$margin;
+    font-size:$fontsize;
+}
+
+@mixin background($backgroundposition,$backgroundrepeat,$backgroundsize){
+    background-position:$backgroundposition;
+    background-repeat:$backgroundrepeat;
+    background-size:$backgroundsize;
+}
+@mixin propiedades($width,$height,$padding){
+    width:$width;
+    height:$height;
+    padding:$padding;
+}
+@mixin pm($padding,$margin){
+    padding:$padding;
+    margin:$margin;
+}
+
+@mixin form($background,$borderradius,$textalign,$alingself,$fonfamily){
+    background-color: $background;
+    border-radius: $borderradius;
+    text-align: $textalign;
+    align-self: $alingself;
+    font-family:$fonfamily;
+}
+@mixin bordes($bordercolor,$bordertop,$borderleft,$borderright){
+    border-color:$bordercolor;
+    border-top:$bordertop;
+    border-left:$borderleft;
+    border-right:$borderright;
+}
+

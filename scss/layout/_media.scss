@@ -1,0 +1,16 @@
+@media(max-width:320px){
+main{
+.fondoincio{
+    background-image: url(../assets/img/fondo.png);
+    @include propiedades(100%,auto,auto);
+    h1{
+        @include text(3px,white,$typografia-titulos,center,10%);
+        padding-bottom: 0%;
+    }
+    h2{
+        @include text(1rem, white,$typografia-subtitulos,center,10%);
+        padding-top: 0%;
+    }
+}
+}
+}

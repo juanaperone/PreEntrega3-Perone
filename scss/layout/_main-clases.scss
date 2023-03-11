@@ -1,0 +1,55 @@
+.fondoclases{
+    background-image: url(../assets/img/fondoclases.png);
+@include background(center,no-repeat,cover);
+@include propiedades(100%,auto,5%);
+h1{
+@include text(600%,white,$typografia-titulos,end,3%);
+}
+}
+.grupos{
+    padding: 5%;
+    margin: 5%;
+    @include grid(3fr 3fr 3fr,auto,center);
+    p{
+        @include text(200%,black,$typografia-subtitulos,center,5%);
+    }
+}
+.queaprendemos{
+    padding:5%;
+    @include grid(2fr 3fr,auto,center);
+    .textoqa{
+        @include grid(1fr,auto,center);
+        padding-right: 10%;
+    }
+    h3{
+        color: #0000FF;
+font-family: $typografia-subtitulos;
+    }
+}
+
+.inscripcion{
+    background-color: $background-secundario;
+    @include grid(repeat(2,1fr),auto,center);
+    grid-area: "nena form";
+    form{
+        @include propiedades(80%,auto,20%);
+        @include form(white,50px,center,center,$typografia-subtitulos);
+    .cajaformulario{
+        @include propiedades(100%,auto,5%);
+        @include bordes(#0000FF,0,0,0);
+    }
+    h3{
+        @include text(400%,#0000FF,$typografia-titulos,center,5%);
+    }
+    .enviar{
+        background-color: $background-principal;
+        font-family: $typografia-subtitulos;
+        color: white;
+        padding:10px;
+        margin: 10px;
+    border-color: #0000FF;
+    font-size: 20px;
+        }
+
+    }
+}
