@@ -1,16 +1,287 @@
-@media(max-width:320px){
-main{
-.fondoincio{
-    background-image: url(../assets/img/fondo.png);
-    @include propiedades(100%,auto,auto);
+@media (max-width:1024px) {
+        /*inicio*/
+
+    .fondoincio{
+        h1 {
+        @include text(32px,white,$typografia-titulos,center,10%);
+    }
+    }
+
+.tema{
+    @include tema(#F15A25, auto, 15%);
+
+    h2 {
+        @include text(48px, white, $typografia-titulos, center, 5%);
+    }
+
+    p {
+        @include text(24px, white, $typografia-subtitulos, center, auto);
+    } 
+}
+.info{
+    padding: 10%;
+    img{
+        width: 70%;
+    }
+}
+
+
+.footer{
+li{
+@include text(20px,white,$typografia-subtitulos,right,2%);
+}
+}
+    /*clases*/
+.fondoclases{
     h1{
-        @include text(3px,white,$typografia-titulos,center,10%);
-        padding-bottom: 0%;
-    }
-    h2{
-        @include text(1rem, white,$typografia-subtitulos,center,10%);
-        padding-top: 0%;
+        font-size: 300%;
     }
 }
+.grupos{
+    @include grid(3fr 3fr 3fr,auto,center);
+    img{
+        width: 80%;
+    }
+    p{
+        @include text(80%,black,$typografia-subtitulos,center,5%);
+    }
+}
+.queaprendemos{
+    @include grid(2fr 2fr,auto,center);
+    img{
+        width: 50%;
+    }
+    h3{
+        color: #0000FF;
+font-family: $typografia-subtitulos;
+        font-size: 80%;
+    }
+    p{
+        font-size: 70%;
+    }
+}
+.inscripcion{
+    padding: 5%;
+    img{
+        .nena{
+        width: 60%;
+        }
+    }
+    form{
+        width: 80%;
+        .espacioform{
+        h3{
+            width:100%;
+        }
+    }
+    }
+    }
+    .footer{
+        li{
+        @include text(10px,white,$typografia-subtitulos,right,2%);
+        }
+        }
+    
+}
+        /*propuesta*/
+
+
+@media (max-width:768px) {
+    .fondoincio{
+        h1 {
+        @include text(32px,white,$typografia-titulos,center,10%);
+    }
+    }
+
+.tema{
+    @include tema(#F15A25, auto, 15%);
+
+    h2 {
+        @include text(48px, white, $typografia-titulos, center, 5%);
+    }
+
+    p {
+        @include text(24px, white, $typografia-subtitulos, center, auto);
+    } 
+}
+.info{
+    padding: 10%;
+    img{
+        width: 70%;
+    }
+}
+
+}
+.footer{
+li{
+@include text(15px,white,$typografia-subtitulos,right,2%);
+}
+
+
+}
+
+
+@media (max-width:425px) {
+    .fondoincio{
+        h1 {
+        @include text(32px,white,$typografia-titulos,center,10%);
+    }
+    }
+
+.tema{
+    @include tema(#F15A25, auto, 15%);
+
+    h2 {
+        @include text(36px, white, $typografia-titulos, center, 5%);
+    }
+
+    p {
+        @include text(16px, white, $typografia-subtitulos, center, auto);
+    } 
+}
+.info{
+    @include grid(1fr, auto, center);
+    grid-template-areas: "img1"
+    "boton1"
+    "img2"
+    "boton2"
+    "img3"
+    "boton3";
+    img{
+        width: 70%;
+    }
+}
+.footer{
+li{
+@include text(10px,white,$typografia-subtitulos,right,2%);
 }
 }
+        /*clases*/
+        .grupos{
+            padding: 5%;
+            margin: 5%;
+            @include grid(1fr,auto,center);
+            grid-template-areas: "grupo1"
+            "grupi1"
+            "grupo2"
+            "grupi2"
+            "grupo3"
+            "grupi3";
+            p{
+                @include text(100%,black,$typografia-subtitulos,center,5%);
+            }
+        }
+        .queaprendemos{
+            @include grid(1fr,auto,center);
+            img{
+                width:100%;
+            }
+        }
+    
+
+form{
+    h3{
+        @include text(10px,#0000FF,$typografia-titulos,center,5%);
+        .text{
+            font-size: 10px;
+        }
+    }
+    .enviar{
+        font-size: 5px;
+    }
+}
+
+}
+@media (max-width:375px) {
+    .fondoincio{
+        h1 {
+        @include text(32px,white,$typografia-titulos,center,10%);
+    }
+    }
+
+.tema{
+    @include tema(#F15A25, auto, 15%);
+
+    h2 {
+        @include text(36px, white, $typografia-titulos, center, 5%);
+    }
+
+    p {
+        @include text(16px, white, $typografia-subtitulos, center, auto);
+    } 
+}
+.info{
+    @include grid(1fr, auto, center);
+    grid-template-areas: "img1"
+    "boton1"
+    "img2"
+    "boton2"
+    "img3"
+    "boton3";
+    img{
+        width: 70%;
+    }
+}
+.footer{
+li{
+@include text(10px,white,$typografia-subtitulos,right,2%);
+}
+}
+        /*clases*/
+        .grupos{
+            padding: 5%;
+            margin: 5%;
+            @include grid(1fr,auto,center);
+            p{
+                @include text(100%,black,$typografia-subtitulos,center,5%);
+            }
+        }
+        .queaprendemos{
+            @include grid(1fr,auto,center);
+        }
+}
+@media (max-width:320px) {
+            .fondoincio{
+                h1 {
+                @include text(32px,white,$typografia-titulos,center,10%);
+            }
+            }
+
+        .tema{
+            @include tema(#F15A25, auto, 15%);
+
+            h2 {
+                @include text(36px, white, $typografia-titulos, center, 5%);
+            }
+        
+            p {
+                @include text(16px, white, $typografia-subtitulos, center, auto);
+            } 
+        }
+        .info{
+            @include grid(1fr, auto, center);
+            grid-template-areas: "img1"
+            "boton1"
+            "img2"
+            "boton2"
+            "img3"
+            "boton3";
+            img{
+                width: 70%;
+            }
+        }
+.footer{
+    li{
+    @include text(10px,white,$typografia-subtitulos,right,2%);
+}
+}
+        /*clases*/
+        .grupos{
+            padding: 5%;
+            margin: 5%;
+            @include grid(1fr,auto,center);
+            p{
+                @include text(100%,black,$typografia-subtitulos,center,5%);
+            }
+        }
+    }
