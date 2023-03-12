@@ -1,287 +1,618 @@
 @media (max-width:1024px) {
-        /*inicio*/
+    /*inicio*/
 
-    .fondoincio{
+    .fondoincio {
         h1 {
-        @include text(32px,white,$typografia-titulos,center,10%);
-    }
-    }
-
-.tema{
-    @include tema(#F15A25, auto, 15%);
-
-    h2 {
-        @include text(48px, white, $typografia-titulos, center, 5%);
+            @include text(32px, white, $typografia-titulos, center, 10%);
+        }
     }
 
-    p {
-        @include text(24px, white, $typografia-subtitulos, center, auto);
-    } 
-}
-.info{
-    padding: 10%;
-    img{
-        width: 70%;
+    .tema {
+        @include tema(#F15A25, auto, 15%);
+
+        h2 {
+            @include text(48px, white, $typografia-titulos, center, 5%);
+        }
+
+        p {
+            @include text(24px, white, $typografia-subtitulos, center, auto);
+        }
     }
-}
+
+    .info {
+        padding: 10%;
+
+        img {
+            width: 70%;
+        }
+    }
 
 
-.footer{
-li{
-@include text(20px,white,$typografia-subtitulos,right,2%);
-}
-}
+    .footer {
+        li {
+            @include text(20px, white, $typografia-subtitulos, right, 2%);
+        }
+    }
+
     /*clases*/
-.fondoclases{
-    h1{
-        font-size: 300%;
+    .fondoclases {
+        h1 {
+            font-size: 300%;
+        }
     }
+
+    .grupos {
+        @include grid(3fr 3fr 3fr, auto, center);
+
+        img {
+            width: 80%;
+        }
+
+        p {
+            @include text(80%, black, $typografia-subtitulos, center, 5%);
+        }
+    }
+
+    .queaprendemos {
+        @include grid(2fr 2fr, auto, center);
+
+        img {
+            width: 50%;
+        }
+
+        h3 {
+            color: #0000FF;
+            font-family: $typografia-subtitulos;
+            font-size: 80%;
+        }
+
+        p {
+            font-size: 70%;
+        }
+    }
+
+    .inscripcion {
+        padding: 5%;
+
+        img {
+            width: 100%;
+        }
+
+        form {
+            width: 80%;
+
+            h3 {
+                font-size: 50px;
+                text-align: center;
+                justify-content: center;
+            }
+
+        }
+    }
+
+    .footer {
+        li {
+            @include text(10px, white, $typografia-subtitulos, right, 2%);
+        }
+    }
+
 }
-.grupos{
-    @include grid(3fr 3fr 3fr,auto,center);
-    img{
+
+/*espacio*/
+.map {
+    width: 80%;
+}
+
+.imagenes {
+    img {
         width: 80%;
     }
-    p{
-        @include text(80%,black,$typografia-subtitulos,center,5%);
+}
+
+/*contacto*/
+.todocontacto {
+    .imagencontacto {
+        img {
+            width: 80%;
+        }
     }
 }
-.queaprendemos{
-    @include grid(2fr 2fr,auto,center);
-    img{
-        width: 50%;
-    }
-    h3{
-        color: #0000FF;
-font-family: $typografia-subtitulos;
-        font-size: 80%;
-    }
-    p{
-        font-size: 70%;
-    }
-}
-.inscripcion{
-    padding: 5%;
-    img{
-        .nena{
-        width: 60%;
-        }
-    }
-    form{
-        width: 80%;
-        .espacioform{
-        h3{
-            width:100%;
-        }
-    }
-    }
-    }
-    .footer{
-        li{
-        @include text(10px,white,$typografia-subtitulos,right,2%);
-        }
-        }
-    
-}
-        /*propuesta*/
+
 
 
 @media (max-width:768px) {
-    .fondoincio{
+    .fondoincio {
         h1 {
-        @include text(32px,white,$typografia-titulos,center,10%);
-    }
-    }
-
-.tema{
-    @include tema(#F15A25, auto, 15%);
-
-    h2 {
-        @include text(48px, white, $typografia-titulos, center, 5%);
+            @include text(32px, white, $typografia-titulos, center, 10%);
+        }
     }
 
-    p {
-        @include text(24px, white, $typografia-subtitulos, center, auto);
-    } 
+    .tema {
+        @include tema(#F15A25, auto, 15%);
+
+        h2 {
+            @include text(48px, white, $typografia-titulos, center, 5%);
+        }
+
+        p {
+            @include text(24px, white, $typografia-subtitulos, center, auto);
+        }
+    }
+
+    .info {
+        padding: 10%;
+
+        img {
+            width: 70%;
+        }
+    }
+
 }
-.info{
-    padding: 10%;
-    img{
-        width: 70%;
+
+.footer {
+    li {
+        @include text(15px, white, $typografia-subtitulos, right, 2%);
     }
 }
 
-}
-.footer{
-li{
-@include text(15px,white,$typografia-subtitulos,right,2%);
+.inscripcion {
+    padding: 5%;
+
+    img {
+        width: 100%;
+    }
+
+    form {
+        width: 80%;
+
+        h3 {
+            font-size: 30px;
+            text-align: center;
+            justify-content: center;
+        }
+
+    }
 }
 
+@media (max-width:768px) {
 
+    /*propuesta*/
+    .misionvision {
+        .mision {
+            @include grid(1fr, auto, center);
+            grid-template-areas: "textomision"
+                "imgmision";
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+
+        .vision {
+            @include grid(1fr, auto, center);
+            grid-template-areas: "textovision"
+                "imgvision";
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+
+    @media (max-width:768px) {
+
+        /*espacio*/
+        .map {
+            width: 80%;
+        }
+
+        .imagenes {
+            img {
+                width: 80%;
+            }
+        }
+    }
+
+    .todocontacto {
+        .imagencontacto {
+            img {
+                width: 80%;
+            }
+        }
+    }
 }
-
 
 @media (max-width:425px) {
-    .fondoincio{
+    .fondoincio {
         h1 {
-        @include text(32px,white,$typografia-titulos,center,10%);
-    }
-    }
-
-.tema{
-    @include tema(#F15A25, auto, 15%);
-
-    h2 {
-        @include text(36px, white, $typografia-titulos, center, 5%);
-    }
-
-    p {
-        @include text(16px, white, $typografia-subtitulos, center, auto);
-    } 
-}
-.info{
-    @include grid(1fr, auto, center);
-    grid-template-areas: "img1"
-    "boton1"
-    "img2"
-    "boton2"
-    "img3"
-    "boton3";
-    img{
-        width: 70%;
-    }
-}
-.footer{
-li{
-@include text(10px,white,$typografia-subtitulos,right,2%);
-}
-}
-        /*clases*/
-        .grupos{
-            padding: 5%;
-            margin: 5%;
-            @include grid(1fr,auto,center);
-            grid-template-areas: "grupo1"
-            "grupi1"
-            "grupo2"
-            "grupi2"
-            "grupo3"
-            "grupi3";
-            p{
-                @include text(100%,black,$typografia-subtitulos,center,5%);
-            }
-        }
-        .queaprendemos{
-            @include grid(1fr,auto,center);
-            img{
-                width:100%;
-            }
-        }
-    
-
-form{
-    h3{
-        @include text(10px,#0000FF,$typografia-titulos,center,5%);
-        .text{
-            font-size: 10px;
+            @include text(32px, white, $typografia-titulos, center, 10%);
         }
     }
-    .enviar{
-        font-size: 5px;
-    }
-}
 
-}
-@media (max-width:375px) {
-    .fondoincio{
-        h1 {
-        @include text(32px,white,$typografia-titulos,center,10%);
-    }
-    }
+    .tema {
+        @include tema(#F15A25, auto, 15%);
 
-.tema{
-    @include tema(#F15A25, auto, 15%);
-
-    h2 {
-        @include text(36px, white, $typografia-titulos, center, 5%);
-    }
-
-    p {
-        @include text(16px, white, $typografia-subtitulos, center, auto);
-    } 
-}
-.info{
-    @include grid(1fr, auto, center);
-    grid-template-areas: "img1"
-    "boton1"
-    "img2"
-    "boton2"
-    "img3"
-    "boton3";
-    img{
-        width: 70%;
-    }
-}
-.footer{
-li{
-@include text(10px,white,$typografia-subtitulos,right,2%);
-}
-}
-        /*clases*/
-        .grupos{
-            padding: 5%;
-            margin: 5%;
-            @include grid(1fr,auto,center);
-            p{
-                @include text(100%,black,$typografia-subtitulos,center,5%);
-            }
+        h2 {
+            @include text(36px, white, $typografia-titulos, center, 5%);
         }
-        .queaprendemos{
-            @include grid(1fr,auto,center);
-        }
-}
-@media (max-width:320px) {
-            .fondoincio{
-                h1 {
-                @include text(32px,white,$typografia-titulos,center,10%);
-            }
-            }
 
-        .tema{
-            @include tema(#F15A25, auto, 15%);
-
-            h2 {
-                @include text(36px, white, $typografia-titulos, center, 5%);
-            }
-        
-            p {
-                @include text(16px, white, $typografia-subtitulos, center, auto);
-            } 
+        p {
+            @include text(16px, white, $typografia-subtitulos, center, auto);
         }
-        .info{
-            @include grid(1fr, auto, center);
-            grid-template-areas: "img1"
+    }
+
+    .info {
+        @include grid(1fr, auto, center);
+        grid-template-areas: "img1"
             "boton1"
             "img2"
             "boton2"
             "img3"
             "boton3";
-            img{
-                width: 70%;
+
+        img {
+            width: 70%;
+        }
+    }
+
+    .footer {
+        li {
+            @include text(10px, white, $typografia-subtitulos, right, 2%);
+        }
+    }
+
+    /*clases*/
+    .grupos {
+        padding: 5%;
+        margin: 5%;
+        @include grid(1fr, auto, center);
+        grid-template-areas: "grupo1"
+            "grupo2"
+            "grupo3";
+
+        p {
+            @include text(100%, black, $typografia-subtitulos, center, 5%);
+        }
+    }
+
+    .queaprendemos {
+        @include grid(1fr, auto, center);
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+    .inscripcion {
+        padding: 5%;
+
+        img {
+            width: 100%;
+        }
+
+        form {
+            width: 80%;
+
+            h3 {
+                font-size: 20px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .enviar {
+                font-size: 10px;
+            }
+
+        }
+    }
+
+    .misionvision {
+        .mision {
+            img {
+                width: 50%;
+            }
+
+            @include grid(1fr, auto, center);
+            grid-template-areas: "textomision"
+            "imgmision";
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 10px;
             }
         }
-.footer{
-    li{
-    @include text(10px,white,$typografia-subtitulos,right,2%);
-}
-}
-        /*clases*/
-        .grupos{
-            padding: 5%;
-            margin: 5%;
-            @include grid(1fr,auto,center);
-            p{
-                @include text(100%,black,$typografia-subtitulos,center,5%);
+
+        .vision {
+            img {
+                width: 50%;
+            }
+
+            @include grid(1fr, auto, center);
+            grid-template-areas: "textovision"
+            "imgvision";
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 10px;
             }
         }
     }
+
+    .video1 {
+        width: 50%;
+    }
+
+    .mapa {
+        h2 {
+            font-size: 40px;
+        }
+
+        h3 {
+            font-size: 24px;
+
+        }
+
+        @include grid(1fr, auto, center);
+
+        .map {
+            width: 80%;
+        }
+    }
+
+    .imagenes {
+        h3 {
+            font-size: 32px;
+        }
+
+        img {
+            width: 80%;
+        }
+    }
+
+
+    .todocontacto {
+        @include grid(1fr, auto, center);
+        grid-template-areas: "infocontaco"
+            "imagencontacto";
+
+        .imagencontacto {
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .fondoincio {
+        h1 {
+            @include text(32px, white, $typografia-titulos, center, 10%);
+        }
+    }
+
+    .tema {
+        @include tema(#F15A25, auto, 15%);
+
+        h2 {
+            @include text(36px, white, $typografia-titulos, center, 5%);
+        }
+
+        p {
+            @include text(16px, white, $typografia-subtitulos, center, auto);
+        }
+    }
+
+    .info {
+        @include grid(1fr, auto, center);
+        grid-template-areas: "img1"
+            "boton1"
+            "img2"
+            "boton2"
+            "img3"
+            "boton3";
+
+        img {
+            width: 70%;
+        }
+    }
+
+    .footer {
+        li {
+            @include text(10px, white, $typografia-subtitulos, right, 2%);
+        }
+    }
+
+    /*clases*/
+    .grupos {
+        padding: 5%;
+        margin: 5%;
+        @include grid(1fr, auto, center);
+        justify-content: center;
+.grupo1{
+    img{
+        display:grid;
+        justify-content: center;
+    }
+}
+        p {
+            @include text(100%, black, $typografia-subtitulos, center, 5%);
+        }
+    }
+
+    .queaprendemos {
+        @include grid(1fr, auto, center);
+    }
+
+    .inscripcion {
+        @include grid(1fr, auto, center);
+        grid-template-areas: "nena"
+            "form";
+
+        form {
+
+            width: 80%;
+
+            h3 {
+                font-size: 25px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .fieldset {
+                .imput {
+                    font-size: 10px;
+                }
+            }
+
+            .enviar {
+                font-size: 10px;
+            }
+        }
+    }
+
+    /*espacio*/
+    .mapa {
+        h2 {
+            font-size: 40px;
+        }
+
+        h3 {
+            font-size: 24px;
+
+        }
+
+        @include grid(1fr, auto, center);
+
+        .map {
+            width: 80%;
+        }
+    }
+
+    .imagenes {
+
+        h3 {
+            font-size: 32px;
+        }
+
+        img {
+            width: 80%;
+
+        }
+
+        .boximg {
+            @include grid(1fr, auto, center);
+        }
+    }
+
+    /*contacto*/
+    .contacto {
+        h1 {
+            font-size: 80px;
+        }
+    }
+
+    .todocontacto {
+        @include grid(1fr, auto, center);
+        grid-template-areas: "infocontaco"
+            "imagencontacto";
+
+        .imagencontacto {
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .fondoincio {
+        h1 {
+            @include text(32px, white, $typografia-titulos, center, 10%);
+        }
+    }
+
+    .tema {
+        @include tema(#F15A25, auto, 15%);
+
+        h2 {
+            @include text(36px, white, $typografia-titulos, center, 5%);
+        }
+
+        p {
+            @include text(16px, white, $typografia-subtitulos, center, auto);
+        }
+    }
+
+    .info {
+        @include grid(1fr, auto, center);
+        grid-template-areas: "img1"
+            "boton1"
+            "img2"
+            "boton2"
+            "img3"
+            "boton3";
+
+        img {
+            width: 70%;
+        }
+    }
+
+    .footer {
+        li {
+            @include text(10px, white, $typografia-subtitulos, right, 2%);
+        }
+    }
+
+    /*clases*/
+    .grupos {
+        padding: 5%;
+        margin: 5%;
+        @include grid(1fr, auto, center);
+
+        p {
+            @include text(100%, black, $typografia-subtitulos, center, 5%);
+        }
+    }
+
+    /*propuesta*/
+
+    .fondopropuesta {
+        h1 {
+            font-size: 60px;
+        }
+    }
+
+    /*contacto*/
+    .contacto {
+        h1 {
+            font-size: 70px;
+        }
+    }
+
+    .todocontacto {
+        @include grid(1fr, auto, center);
+        grid-template-areas: "infocontaco"
+            "imagencontacto";
+
+        .imagencontacto {
+            img {
+                width: 80%;
+            }
+        }
+    }
+}

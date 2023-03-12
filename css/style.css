@@ -21,7 +21,8 @@ header {
     font-family: "Just Another Hand", cursive;
     text-align: right;
     padding: 10%;
-    padding-bottom: 0%; }
+    padding-bottom: 0%;
+    margin-bottom: 0%; }
   .fondoinicio h2 {
     font-size: 32px;
     color: white;
@@ -29,7 +30,7 @@ header {
     text-align: right;
     padding: 10%;
     padding-top: 0%;
-    padding-bottom: 25%; }
+    margin-bottom: 0%; }
 
 .tema {
   background-color: #F15A25;
@@ -54,14 +55,21 @@ header {
   grid-template-columns: 3fr 3fr 3fr;
   grid-template-rows: auto;
   justify-items: center;
-  grid-area: "img1 img2 img3" "boton1 boton2 boton3"; }
+  grid-area: "info1 info2 info3";
+  justify-content: center; }
+  .info .info1, .info .info2, .info .info3 {
+    display: grid;
+    justify-content: center; }
+  .info img {
+    justify-self: center; }
   .info button {
     border-color: blue;
     border-radius: 50px;
     background-color: blue;
     color: azure;
     margin: 3%;
-    font-size: 20px; }
+    font-size: 20px;
+    justify-self: center; }
 
 .fondofin {
   display: grid;
@@ -103,12 +111,18 @@ header {
   grid-template-columns: 3fr 3fr 3fr;
   grid-template-rows: auto;
   justify-items: center; }
+  .grupos .grupo1, .grupos .grupo2, .grupos .grupo3 {
+    display: grid;
+    justify-content: center; }
   .grupos p {
     font-size: 200%;
     color: black;
     font-family: "Poppins", sans-serif;
     text-align: center;
     padding: 5%; }
+  .grupos img {
+    justify-content: center;
+    justify-self: center; }
 
 .queaprendemos {
   padding: 5%;
@@ -405,12 +419,14 @@ header {
       font-size: 70%; }
   .inscripcion {
     padding: 5%; }
-    .inscripcion img .nena {
-      width: 60%; }
+    .inscripcion img {
+      width: 100%; }
     .inscripcion form {
       width: 80%; }
-      .inscripcion form .espacioform h3, .inscripcion form .espacioform .todocontacto .infocontacto p, .todocontacto .infocontacto .inscripcion form .espacioform p {
-        width: 100%; }
+      .inscripcion form h3, .inscripcion form .todocontacto .infocontacto p, .todocontacto .infocontacto .inscripcion form p {
+        font-size: 50px;
+        text-align: center;
+        justify-content: center; }
   .footer li {
     font-size: 10px;
     color: white;
@@ -418,7 +434,17 @@ header {
     text-align: right;
     padding: 2%; } }
 
-/*propuesta*/
+/*espacio*/
+.map {
+  width: 80%; }
+
+.imagenes img {
+  width: 80%; }
+
+/*contacto*/
+.todocontacto .imagencontacto img {
+  width: 80%; }
+
 @media (max-width: 768px) {
   .fondoincio h1 {
     font-size: 32px;
@@ -453,6 +479,51 @@ header {
   font-family: "Poppins", sans-serif;
   text-align: right;
   padding: 2%; }
+
+.inscripcion {
+  padding: 5%; }
+  .inscripcion img {
+    width: 100%; }
+  .inscripcion form {
+    width: 80%; }
+    .inscripcion form h3, .inscripcion form .todocontacto .infocontacto p, .todocontacto .infocontacto .inscripcion form p {
+      font-size: 30px;
+      text-align: center;
+      justify-content: center; }
+
+@media (max-width: 768px) {
+  /*propuesta*/
+  .misionvision .mision {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-template-areas: "textomision" "imgmision"; }
+    .misionvision .mision h3, .misionvision .mision .todocontacto .infocontacto p, .todocontacto .infocontacto .misionvision .mision p {
+      font-size: 20px; }
+    .misionvision .mision p {
+      font-size: 10px; }
+  .misionvision .vision {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-template-areas: "textovision" "imgvision"; }
+    .misionvision .vision h3, .misionvision .vision .todocontacto .infocontacto p, .todocontacto .infocontacto .misionvision .vision p {
+      font-size: 20px; }
+    .misionvision .vision p {
+      font-size: 10px; } }
+
+@media (max-width: 768px) and (max-width: 768px) {
+  /*espacio*/
+  .map {
+    width: 80%; }
+  .imagenes img {
+    width: 80%; } }
+
+@media (max-width: 768px) {
+  .todocontacto .imagencontacto img {
+    width: 80%; } }
 
 @media (max-width: 425px) {
   .fondoincio h1 {
@@ -499,7 +570,7 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     justify-items: center;
-    grid-template-areas: "grupo1" "grupi1" "grupo2" "grupi2" "grupo3" "grupi3"; }
+    grid-template-areas: "grupo1" "grupo2" "grupo3"; }
     .grupos p {
       font-size: 100%;
       color: black;
@@ -513,16 +584,67 @@ header {
     justify-items: center; }
     .queaprendemos img {
       width: 100%; }
-  form h3, form .todocontacto .infocontacto p, .todocontacto .infocontacto form p {
-    font-size: 10px;
-    color: #0000FF;
-    font-family: "Just Another Hand", cursive;
-    text-align: center;
+  .inscripcion {
     padding: 5%; }
-    form h3 .text, form .todocontacto .infocontacto p .text, .todocontacto .infocontacto form p .text {
+    .inscripcion img {
+      width: 100%; }
+    .inscripcion form {
+      width: 80%; }
+      .inscripcion form h3, .inscripcion form .todocontacto .infocontacto p, .todocontacto .infocontacto .inscripcion form p {
+        font-size: 20px;
+        text-align: center;
+        justify-content: center; }
+      .inscripcion form .enviar {
+        font-size: 10px; }
+  .misionvision .mision {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-template-areas: "textomision" "imgmision"; }
+    .misionvision .mision img {
+      width: 50%; }
+    .misionvision .mision h3, .misionvision .mision .todocontacto .infocontacto p, .todocontacto .infocontacto .misionvision .mision p {
+      font-size: 20px; }
+    .misionvision .mision p {
       font-size: 10px; }
-  form .enviar {
-    font-size: 5px; } }
+  .misionvision .vision {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-template-areas: "textovision" "imgvision"; }
+    .misionvision .vision img {
+      width: 50%; }
+    .misionvision .vision h3, .misionvision .vision .todocontacto .infocontacto p, .todocontacto .infocontacto .misionvision .vision p {
+      font-size: 20px; }
+    .misionvision .vision p {
+      font-size: 10px; }
+  .video1 {
+    width: 50%; }
+  .mapa {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center; }
+    .mapa h2 {
+      font-size: 40px; }
+    .mapa h3, .mapa .todocontacto .infocontacto p, .todocontacto .infocontacto .mapa p {
+      font-size: 24px; }
+    .mapa .map {
+      width: 80%; }
+  .imagenes h3, .imagenes .todocontacto .infocontacto p, .todocontacto .infocontacto .imagenes p {
+    font-size: 32px; }
+  .imagenes img {
+    width: 80%; }
+  .todocontacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-template-areas: "infocontaco" "imagencontacto"; }
+    .todocontacto .imagencontacto img {
+      width: 80%; } }
 
 @media (max-width: 375px) {
   .fondoincio h1 {
@@ -568,7 +690,11 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    justify-items: center; }
+    justify-items: center;
+    justify-content: center; }
+    .grupos .grupo1 img, .grupos .grupo2 img, .grupos .grupo3 img {
+      display: grid;
+      justify-content: center; }
     .grupos p {
       font-size: 100%;
       color: black;
@@ -579,7 +705,55 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    justify-items: center; } }
+    justify-items: center; }
+  .inscripcion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-template-areas: "nena" "form"; }
+    .inscripcion form {
+      width: 80%; }
+      .inscripcion form h3, .inscripcion form .todocontacto .infocontacto p, .todocontacto .infocontacto .inscripcion form p {
+        font-size: 25px;
+        text-align: center;
+        justify-content: center; }
+      .inscripcion form .fieldset .imput {
+        font-size: 10px; }
+      .inscripcion form .enviar {
+        font-size: 10px; }
+  /*espacio*/
+  .mapa {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center; }
+    .mapa h2 {
+      font-size: 40px; }
+    .mapa h3, .mapa .todocontacto .infocontacto p, .todocontacto .infocontacto .mapa p {
+      font-size: 24px; }
+    .mapa .map {
+      width: 80%; }
+  .imagenes h3, .imagenes .todocontacto .infocontacto p, .todocontacto .infocontacto .imagenes p {
+    font-size: 32px; }
+  .imagenes img {
+    width: 80%; }
+  .imagenes .boximg {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center; }
+  /*contacto*/
+  .contacto h1 {
+    font-size: 80px; }
+  .todocontacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-template-areas: "infocontaco" "imagencontacto"; }
+    .todocontacto .imagencontacto img {
+      width: 80%; } }
 
 @media (max-width: 320px) {
   .fondoincio h1 {
@@ -631,4 +805,18 @@ header {
       color: black;
       font-family: "Poppins", sans-serif;
       text-align: center;
-      padding: 5%; } }
+      padding: 5%; }
+  /*propuesta*/
+  .fondopropuesta h1 {
+    font-size: 60px; }
+  /*contacto*/
+  .contacto h1 {
+    font-size: 70px; }
+  .todocontacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-template-areas: "infocontaco" "imagencontacto"; }
+    .todocontacto .imagencontacto img {
+      width: 80%; } }

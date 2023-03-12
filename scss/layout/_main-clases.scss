@@ -10,8 +10,23 @@ h1{
     padding: 5%;
     margin: 5%;
     @include grid(3fr 3fr 3fr,auto,center);
+    .grupo1{
+        display: grid;
+        justify-content: center;
+    }
+    .grupo2{
+        @extend .grupo1;
+    }
+    .grupo3{
+        @extend .grupo1;
+    }
     p{
         @include text(200%,black,$typografia-subtitulos,center,5%);
+    }
+    img{
+        justify-content:center ;
+        justify-self: center;
+
     }
 }
 .queaprendemos{

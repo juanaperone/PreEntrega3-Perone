@@ -4,13 +4,14 @@
 
     h1 {
         @include text(96px, white, $typografia-titulos, right, 10%);
-        padding-bottom: 0%
+        padding-bottom: 0%;
+        margin-bottom:0%;
     }
 
     h2 {
         @include text(32px, white, $typografia-subtitulos, right, 10%);
         padding-top: 0%;
-        padding-bottom: 25%;
+        margin-bottom:0%;
     }
 }
 
@@ -29,11 +30,25 @@
 .info {
     background-color: $background-secundario;
     @include grid(3fr 3fr 3fr, auto, center);
-    grid-area: "img1 img2 img3"
-        "boton1 boton2 boton3";
+    grid-area: "info1 info2 info3";
+    justify-content: center;
+.info1{
+    display: grid;
+    justify-content: center;
+}
+.info2{
+    @extend .info1;
+}
+.info3{
+    @extend .info1;
+}
+img{
+    justify-self: center;
 
+}
     button {
         @include boton(blue, 50px, blue, azure, 3%, 20px);
+        justify-self: center;
     }
 }
 
