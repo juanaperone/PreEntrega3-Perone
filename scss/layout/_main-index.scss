@@ -46,10 +46,14 @@ img{
     justify-self: center;
 
 }
+a{
+    justify-self: center;
+}
     button {
-        @include boton(blue, 50px, blue, azure, 3%, 20px);
+        @include boton(blue, 40px, blue, azure, 3%, 20px);
         justify-self: center;
     }
+
 }
 
 .fondofin {
