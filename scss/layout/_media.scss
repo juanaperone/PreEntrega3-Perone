@@ -231,6 +231,11 @@
 }
 
 @media (max-width:425px) {
+    header{
+        img{
+            width: 20%;
+        }
+    }
     .fondoincio {
         h1 {
             @include text(32px, white, $typografia-titulos, center, 10%);
@@ -399,6 +404,12 @@
 }
 
 @media (max-width:375px) {
+    header {
+        img {
+            width: 20%;
+        }
+    }
+
     .fondoincio {
         h1 {
             @include text(32px, white, $typografia-titulos, center, 10%);
@@ -443,12 +454,14 @@
         margin: 5%;
         @include grid(1fr, auto, center);
         justify-content: center;
-.grupo1{
-    img{
-        display:grid;
-        justify-content: center;
-    }
-}
+
+        .grupo1 {
+            img {
+                display: grid;
+                justify-content: center;
+            }
+        }
+
         p {
             @include text(100%, black, $typografia-subtitulos, center, 5%);
         }
@@ -540,6 +553,12 @@
 }
 
 @media (max-width:320px) {
+    header {
+        img {
+            width: 20%;
+        }
+    }
+
     .fondoincio {
         h1 {
             @include text(32px, white, $typografia-titulos, center, 10%);

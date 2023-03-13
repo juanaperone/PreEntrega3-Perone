@@ -528,6 +528,8 @@ header {
     width: 80%; } }
 
 @media (max-width: 425px) {
+  header img {
+    width: 20%; }
   .fondoincio h1 {
     font-size: 32px;
     color: white;
@@ -649,6 +651,8 @@ header {
       width: 80%; } }
 
 @media (max-width: 375px) {
+  header img {
+    width: 20%; }
   .fondoincio h1 {
     font-size: 32px;
     color: white;
@@ -758,6 +762,8 @@ header {
       width: 80%; } }
 
 @media (max-width: 320px) {
+  header img {
+    width: 20%; }
   .fondoincio h1 {
     font-size: 32px;
     color: white;
