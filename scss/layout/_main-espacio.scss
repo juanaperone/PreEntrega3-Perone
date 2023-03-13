@@ -19,12 +19,20 @@
 .imagenes{
     background-color:$background-secundario;
     padding: 10%;
+    .boximg{
+    transition: 0,5s;
+    overflow: hidden;
+    object-fit: cover;
+    :hover{
+        transform: scale(1.5);
+    }
+    }
     h3{
         @include text(64px,white,$typografia-titulos,center,auto);
     }
     .boximg{
         @include grid(2fr 2fr, auto,center);
-     
+
     }
     .im3{
         padding-top: 2%;

@@ -291,6 +291,12 @@ header {
 .imagenes {
   background-color: #F15A25;
   padding: 10%; }
+  .imagenes .boximg {
+    transition: 0,5s;
+    overflow: hidden;
+    object-fit: cover; }
+    .imagenes .boximg :hover {
+      transform: scale(1.5); }
   .imagenes h3, .imagenes .todocontacto .infocontacto p, .todocontacto .infocontacto .imagenes p {
     font-size: 64px;
     color: white;
