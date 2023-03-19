@@ -296,8 +296,11 @@
         }
     }
 
-
     .inscripcion {
+        @include grid(1fr, auto, center);
+        grid-template-areas: "nena"
+            "form";
+        
         padding: 5%;
 
         img {
@@ -308,7 +311,7 @@
             width: 80%;
 
             h3 {
-                font-size: 20px;
+                font-size: 15px;
                 text-align: center;
                 justify-content: center;
             }
@@ -319,6 +322,7 @@
 
         }
     }
+
 
     .misionvision {
         .mision {
@@ -378,7 +382,9 @@
             width: 80%;
         }
     }
-
+    .boximg {
+        @include grid(1fr, auto, center);
+    }
     .imagenes {
         h3 {
             font-size: 32px;
